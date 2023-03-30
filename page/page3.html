@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leopard Drawing</title>
+	<style>
+		canvas {
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+
+		// Draw the body of the leopard
+		ctx.fillStyle = "#F9A602";
+		ctx.beginPath();
+		ctx.moveTo(100, 100);
+		ctx.lineTo(200, 150);
+		ctx.lineTo(150, 250);
+		ctx.lineTo(50, 200);
+		ctx.closePath();
+		ctx.fill();
+
+		// Draw the spots of the leopard
+		ctx.fillStyle = "#000";
+		ctx.beginPath();
+		ctx.arc(120, 140, 20, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(170, 170, 30, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(90, 180, 25, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(130, 220, 20, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(170, 220, 25, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(60, 240, 30, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(150, 280, 20, 0, 2*Math.PI);
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(190, 280, 25, 0, 2*Math.PI);
+		ctx.fill();
+	</script>
+</body>
+</html>
