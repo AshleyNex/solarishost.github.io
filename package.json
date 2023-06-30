@@ -9,7 +9,7 @@
     "discord.js": "^13.8.1",
     "dotenv": "^16.0.1",
     "node.js": "^0.0.1-security",
-    "npm": "^8.11.0",
+    "npm": "^9.7.2",
     "train": "^4.4.1"
   },
   "scripts": {
